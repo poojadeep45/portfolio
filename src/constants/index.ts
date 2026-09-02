@@ -3,7 +3,6 @@ import type {
   TService,
   TTechnology,
   TExperience,
-  TTestimonial,
   TProject,
 } from "../types";
 
@@ -19,7 +18,6 @@ import {
   mongodb,
   git,
   docker,
-  threejs,
   studentApi,
   docusense,
   healthcare,
