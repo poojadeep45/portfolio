@@ -160,6 +160,7 @@ const projects: TProject[] = [
     ],
     image: studentApi,
     sourceCodeLink: "https://github.com/poojadeep45/StudentManagementAPI",
+    liveDemoLink: "https://studentmanagementapi-production-ca12.up.railway.app/swagger-ui/index.html",
   },
   {
     name: "DocuSense",
@@ -181,6 +182,7 @@ const projects: TProject[] = [
     ],
     image: docusense,
     sourceCodeLink: "https://github.com/poojadeep45/docusense",
+    liveDemoLink: "https://docusense-production-d92a.up.railway.app/",
   },
   {
     name: "Intelligent Healthcare Platform (FYP)",

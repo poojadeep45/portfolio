@@ -78,11 +78,7 @@ const Navbar = () => {
                 active === nav.id ? "text-white" : "text-secondary"
               } cursor-pointer text-[18px] font-medium hover:text-white`}
             >
-              {nav.id === "projects" ? (
-                <Link to="/projects">{nav.title}</Link>
-              ) : (
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              )}
+              <Link to={`/#${nav.id}`}>{nav.title}</Link>
             </li>
           ))}
         </ul>
@@ -111,11 +107,7 @@ const Navbar = () => {
                     setToggle(!toggle);
                   }}
                 >
-                  {nav.id === "projects" ? (
-                    <Link to="/projects">{nav.title}</Link>
-                  ) : (
-                    <a href={`#${nav.id}`}>{nav.title}</a>
-                  )}
+                  <Link to={`/#${nav.id}`}>{nav.title}</Link>
                 </li>
               ))}
             </ul>

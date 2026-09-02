@@ -15,6 +15,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   tags,
   image,
   sourceCodeLink,
+  liveDemoLink,
 }) => {
   return (
     <motion.div
@@ -37,7 +38,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
               alt={name}
               className="h-full w-full rounded-2xl object-cover"
             />
-            <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
+            <div className="card-img_hover absolute inset-0 m-3 flex justify-end gap-2">
               <div
                 onClick={() => window.open(sourceCodeLink, "_blank")}
                 className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
@@ -48,6 +49,27 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
                   className="h-1/2 w-1/2 object-contain"
                 />
               </div>
+              {liveDemoLink && (
+                <div
+                  onClick={() => window.open(liveDemoLink, "_blank")}
+                  className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#915EFF]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="h-5 w-5 text-white"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
+                </div>
+              )}
             </div>
           </div>
           <div className="mt-5">
@@ -69,7 +91,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
 
 const Projects = () => {
   return (
-    <section className={`relative mx-auto h-full w-full max-w-7xl ${styles.paddingX} py-16`}>
+    <section id="projects" className={`relative mx-auto h-full w-full max-w-7xl ${styles.paddingX} py-16`}>
       <Header useMotion={true} {...config.sections.works} />
 
       <div className="flex w-full">
