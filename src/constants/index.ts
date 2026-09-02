@@ -8,36 +8,31 @@ import type {
 } from "../types";
 
 import {
-  mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  studentApi,
+  docusense,
+  healthcare,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
   {
     id: "about",
     title: "About",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "work",
@@ -51,24 +46,60 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "REST API Design",
+    icon: web,
+  },
+  {
+    title: "AI Integration",
+    icon: web,
+  },
+  {
+    title: "DevOps & CI/CD",
+    icon: docker,
   },
 ];
 
 const technologies: TTechnology[] = [
+  {
+    name: "Java",
+    icon: javascript, // swap for a real Java icon — see note below
+  },
+  {
+    name: "Spring Boot",
+    icon: backend, // swap for a real Spring icon — see note below
+  },
+  {
+    name: "Python",
+    icon: javascript, // swap for a real Python icon — see note below
+  },
+  {
+    name: "MySQL",
+    icon: mongodb, // swap for a real MySQL icon — see note below
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "REST APIs",
+    icon: web,
+  },
+  {
+    name: "JWT / OAuth 2.0",
+    icon: backend,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -82,137 +113,82 @@ const technologies: TTechnology[] = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
+    title: "Spring Boot Intern",
+    companyName: "Systems Limited",
+    icon: backend, // swap for a real company logo — see note below
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "March 2026 - April 2026",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built a Student Management REST API using Spring Boot, implementing full CRUD operations with Spring Data JPA and Hibernate for entity mapping.",
+      "Integrated H2 (testing) and MySQL (production) databases; configured data sources and managed schema via JPA annotations.",
+      "Improved API reliability and debuggability by implementing global exception handling, bean validation, and structured logging.",
+      "Applied layered MVC architecture separating Controller, Service, and Repository layers; wrote unit tests across all three layers.",
+      "Collaborated in an agile environment, following best practices for code structure and dependency injection.",
     ],
-  },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
-
-const testimonials: TTestimonial[] = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "Student Management API",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A full-featured Spring Boot REST API with a six-entity JPA schema, JWT + OAuth 2.0/OIDC security, three-layer testing (JUnit, Mockito), and a full CI/CD pipeline — Dockerized, published to Docker Hub, and deployed via GitHub Actions to Railway with managed MySQL.",
     tags: [
       {
-        name: "react",
+        name: "spring-boot",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: studentApi,
+    sourceCodeLink: "https://github.com/poojadeep45/StudentManagementAPI",
+  },
+  {
+    name: "DocuSense",
+    description:
+      "An AI-powered document summarization API. Upload a PDF, DOCX, or TXT file and it extracts the text and generates a summary via Google Gemini, processed asynchronously behind JWT-secured, per-user access. Dockerized and deployed live, with CI running the test suite on every push.",
+    tags: [
+      {
+        name: "spring-boot",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "gemini-ai",
+        color: "green-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: docusense,
+    sourceCodeLink: "https://github.com/poojadeep45/docusense",
+  },
+  {
+    name: "Intelligent Healthcare Platform (FYP)",
+    description:
+      "A full-stack digital health platform with AI-assisted symptom checking, doctor consultation, and appointment/pharmacy/lab booking. Built with a Node.js/Express and MongoDB backend, React/Vite frontend, and Google Gemini AI for symptom assessment.",
+    tags: [
+      {
+        name: "nodejs",
         color: "blue-text-gradient",
       },
       {
@@ -220,55 +196,13 @@ const projects: TProject[] = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
         name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: healthcare,
+    sourceCodeLink: "https://github.com/AyeshaAhmed1573/Health_management_system",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

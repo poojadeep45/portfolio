@@ -7,6 +7,7 @@ import { SectionWrapper } from "../../hoc";
 import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
+import { profile } from "../../assets";
 
 interface IServiceCard {
   index: number;
@@ -48,12 +49,21 @@ const About = () => {
     <>
       <Header useMotion={true} {...config.sections.about} />
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="text-secondary mt-4 max-w-3xl text-[17px] leading-[30px]"
-      >
-        {config.sections.about.content}
-      </motion.p>
+      <div className="mt-8 flex flex-col items-start gap-8 sm:flex-row sm:items-center">
+        <motion.img
+          variants={fadeIn("right", "spring", 0.1, 1)}
+          src={profile}
+          alt="Pooja Deep"
+          className="h-40 w-40 flex-shrink-0 rounded-full border-4 border-[#915eff] object-cover sm:h-48 sm:w-48"
+        />
+
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="text-secondary max-w-3xl text-[17px] leading-[30px]"
+        >
+          {config.sections.about.content}
+        </motion.p>
+      </div>
 
       <div className="mt-20 flex flex-wrap gap-10 max-sm:justify-center">
         {services.map((service, index) => (

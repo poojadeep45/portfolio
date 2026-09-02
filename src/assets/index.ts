@@ -30,6 +30,12 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import studentApi from "./studentApi.png";
+import docusense from "./docusense.png";
+import healthcare from "./healthcare.png";
+
+import profile from "./profile.png";
+
 export {
   logo,
   backend,
@@ -59,4 +65,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  studentApi,
+  docusense,
+  healthcare,
+  profile,
 };

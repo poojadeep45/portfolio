@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Pooja Deep — Portfolio",
+    fullName: "Pooja Deep",
+    email: "poojadeep684@gmail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Pooja Deep",
+    p: ["I build backend systems and", "AI-powered APIs with Java & Spring Boot"],
   },
   contact: {
     p: "Get in touch",
@@ -67,11 +67,16 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I'm a Backend Developer and final-year Computer Science
+      student at the University of Karachi (DCS-UBIT), specializing in Java,
+      Spring Boot, and REST API development. I've built and deployed
+      production-style systems with Spring Security, JWT/OAuth 2.0,
+      MySQL, Docker, and CI/CD pipelines — including a live API deployed
+      on Railway. I also work with Python and AI integration (Google
+      Gemini, OpenAI API) for intelligent backend features. I'm seeking
+      an entry-level Backend Developer role where I can bring strong
+      problem-solving skills and a track record of shipping real, working
+      systems.`,
     },
     experience: {
       p: "What I have done so far",
@@ -84,11 +89,11 @@ export const config: TConfig = {
     works: {
       p: "My work",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: `The following projects showcase my backend development
+      skills through real-world systems — from a fully secured REST API
+      with JWT and OAuth 2.0 to an AI-powered document analysis platform.
+      Each project includes links to the code and, where available, a
+      live deployed demo.`,
     },
   },
 };
