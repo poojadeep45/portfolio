@@ -10,7 +10,6 @@ import {
   backend,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
