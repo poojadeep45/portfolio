@@ -4,7 +4,7 @@ A modern, responsive 3D portfolio website built with React.js, Three.js, and Typ
 
 ## 🌐 Live Demo
 
-Portfolio URL: [Your Portfolio URL]
+Portfolio URL: [portfolio-1aby.vercel.app](https://portfolio-1aby.vercel.app)
 
 ## 📝 Description
 
@@ -220,7 +220,7 @@ This is a personal portfolio, but suggestions and improvements are welcome:
 ## 📞 Contact
 
 - **Email**: poojadeep684@gmail.com
-- **LinkedIn**: [Your LinkedIn Profile]
+- **LinkedIn**: [pooja-deep-1bb950276](https://www.linkedin.com/in/pooja-deep-1bb950276/)
 - **GitHub**: [poojadeep45](https://github.com/poojadeep45)
 
 ## 📄 License
